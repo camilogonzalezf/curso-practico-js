@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geométricas</title>
+</head>
+<body>
+    <header style="text-align: center;">
+        <h1>Figuras Geométricas</h1>
+        <p>Primer taller de JS y HTML</p>
+    </header>
+    <section style="text-align: center;">
+        <h2 style="color: red">Calcular área y perímetro de: Cuadrado, Triángulo y Círculo</h2>
+        <div style="display: flex; justify-content: space-evenly;">
+            <form>
+                <div style="border: 1px solid blue; width: 100%; height: 180px; margin: auto; border-radius: 10px; display: flex; flex-flow: column; justify-content: space-around; padding:2px 20px;">
+                    <h3 style="margin: 0">Cuadrado</h3>
+                    <label for="InputCuadrado"> Digite Lado </label>
+                        <input style="border-radius: 5px;" id="InputCuadrado" type="number" placeholder="Digite el Lado">
+                    <button type="button" onclick="calcularPerimetroCuadrado()" style="background-color: rgb(138, 218, 221); border-radius: 10px;"> <!--Se pone type button para que no recargue la página-->
+                        Calcular Perímetro
+                    </button> 
+                    <button type="button" onclick="calcularAreaCuadrado()" style="background-color: rgb(138, 218, 221); border-radius: 10px;"> <!--Se pone type button para que no recargue la página-->
+                        Calcular Área
+                    </button> 
+                </div>
+            </form>
+
+            <form>
+                <div style="border: 1px solid red; width: 100%; height: 350px; margin: auto; border-radius: 10px; display: flex; flex-flow: column; justify-content: space-around; padding:2px 20px;">
+                    <h3 style="margin: 0">Triángulo</h3>
+                    <label for="InputTrianguloLado1"> Digite Lado 1 </label>
+                    <input style="border-radius: 5px;" id="InputTrianguloLado1" type="number" placeholder="Digite lado 1">
+                    <label for="InputTrianguloLado2">Digite Lado 2</label>
+                    <input style="border-radius: 5px;" type="number" id="InputTrianguloLado2" placeholder="Digite lado 2">
+                    <label for="InputBase">Digite Base</label>
+                    <input style="border-radius: 5px;" type="number" id="InputTrianguloBase" placeholder="Digite Base">
+                    <label for="InputTrianguloAltura">Digite Altura</label>
+                    <input style="border-radius: 5px;" type="number" id="InputTrianguloAltura" placeholder="Digite Altura">                    
+                    <button type="button" onclick="calcularPerimetroTriangulo()" style="background-color: rgb(138, 218, 221); border-radius: 10px;"> <!--Se pone type button para que no recargue la página-->
+                        Calcular Perímetro
+                    </button> 
+                    <button type="button" onclick="calcularAreaTriangulo()" style="background-color: rgb(138, 218, 221); border-radius: 10px;"> <!--Se pone type button para que no recargue la página-->
+                        Calcular Área
+                    </button> 
+                </div>
+            </form>
+
+            <form>
+                <div style="border: 1px solid green; width: 100%; height: 180px; margin: auto; border-radius: 10px; display: flex; flex-flow: column; justify-content: space-around; padding:2px 20px;">
+                    <h3 style="margin: 0">Círcunferencia</h3>
+                    <label for="InputRadio"> Digite radio </label>
+                        <input style="border-radius: 5px;" id="InputRadio" type="number" placeholder="Digite el Radio">
+                    <button type="button" onclick="calcularPerimetroCirculo()" style="background-color: rgb(138, 218, 221); border-radius: 10px;"> <!--Se pone type button para que no recargue la página-->
+                        Calcular Perímetro
+                    </button> 
+                    <button type="button" onclick="calcularAreaCirculo()" style="background-color: rgb(138, 218, 221); border-radius: 10px;"> <!--Se pone type button para que no recargue la página-->
+                        Calcular Área
+                    </button> 
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="funciones.js"></script>
+</body>
+</html>

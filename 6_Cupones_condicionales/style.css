@@ -1,0 +1,45 @@
+header{
+    text-align: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+
+}
+h2{
+margin: auto;
+}
+
+form{
+    margin: 20px auto;
+    width: 20%;
+    height: 200px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 10px;
+    align-items: center;
+}
+label{
+    font-size: 14px;
+    color: red;
+}
+input,button{
+    width: 70%;
+}
+
+button{
+    background-color: chocolate;
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    cursor: pointer;
+}
+
+p{
+    color: blue;
+    font-size: 14px;
+}
